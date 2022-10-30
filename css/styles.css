@@ -529,11 +529,15 @@ border-radius: 0px 0px 4px 4px;
 }
 
 /*----------------FORM-FOOTER-----------------------------------------------------------*/
+
+.footer-e-mail {
+    margin-left: 93px;
+    
+}
 .form-found {
     display: flex;
     flex-direction: column;
-    margin-left: 93px;
-    
+      
 }
 .form-found label {
     font-family: 'Roboto';
@@ -553,32 +557,25 @@ border-radius: 0px 0px 4px 4px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: transparent;
+    
 }
-.footer-form {
-    display: flex;
-}
+
+
 .footer-form-button {
-    display: flex;
-    align-items: flex-end;
+   
+    font-family: inherit;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 28px;
+    padding-right: 28px;
     
-    margin-left: 12px;
-}
-.footer-form-button-text {
-    
-    width: 200px;
-    height: 50px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.9;
-    letter-spacing: 0.06em;
     color: var(--white-text-color);
     background-color: var(--accent-text-color);
 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 }
+
 /*Clients--------------------------------------------------------------------------------------------------------------------------------------*/
 .clients-list {
 display: flex;
@@ -822,6 +819,7 @@ color: var(--title-text-color);
     height: 581px;
     background-color: #fff;
     border-radius: 4px;
+    padding: 40px;
 
     position: absolute;
     top: 50%;
@@ -869,9 +867,7 @@ color: var(--title-text-color);
 
 .form {
     width: 448px;
-    margin-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
+   
 }
 .form-field {
     display: flex;
@@ -901,6 +897,7 @@ color: var(--title-text-color);
     padding-left: 42px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    outline: none;
     
     transition: border-color 250ms var(--timing-function);
     
@@ -908,6 +905,7 @@ color: var(--title-text-color);
 .form-field input:hover,
 .form-field input:focus {
     border-color: var(--accent-text-color);
+    
 } 
 
 /* .form-field input:hover + .form-field label,
@@ -930,8 +928,8 @@ textarea {
     height: 120px;
      border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    margin-bottom: 20px;
     padding: 12px;
+    outline: none;
 
     transition: border-color 250ms var(--timing-function);
     
@@ -969,8 +967,7 @@ textarea:focus {
     color: var(--accent-text-color);
 }
 .form-button-text {
-    width: 200px;
-    height: 50px;
+    
     background-color: var(--accent-text-color);
     color: var(--white-text-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -981,6 +978,10 @@ textarea:focus {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 52px;
+    padding-right: 52px;
     
     
     letter-spacing: 0.06em;
