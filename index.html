@@ -57,7 +57,9 @@
       <section class="hero">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
 
-        <button data-modal-open type="button">Замовити послугу</button>
+        <button class="hero-button" data-modal-open type="button">
+          Замовити послугу
+        </button>
       </section>
       <section class="section">
         <div class="container">
@@ -442,36 +444,24 @@
             <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
             <div class="form-field">
               <label for="name">
-                <svg class="form-field-img">
-                  <use
-                    href="./images/icons.svg#icon-contact"
-                    width="12"
-                    height="12"
-                  ></use></svg
+                <svg class="form-field-img" width="12" height="12">
+                  <use href="./images/icons.svg#icon-contact"></use></svg
                 >Ім'я</label
               >
               <input type="text" id="name" />
             </div>
             <div class="form-field">
               <label for="tel">
-                <svg class="form-field-img">
-                  <use
-                    href="./images/icons.svg#icon-tel"
-                    width="13"
-                    height="13"
-                  ></use></svg
+                <svg class="form-field-img" width="13" height="13">
+                  <use href="./images/icons.svg#icon-tel"></use></svg
                 >Телефон</label
               >
               <input type="text" id="tel" placeholder=" " />
             </div>
             <div class="form-field">
               <label for="email"
-                ><svg class="form-field-img">
-                  <use
-                    href="./images/icons.svg#icon-mail"
-                    width="15"
-                    height="12"
-                  ></use></svg
+                ><svg class="form-field-img" width="15" height="12">
+                  <use href="./images/icons.svg#icon-mail"></use></svg
                 >Пошта</label
               >
               <input type="text" id="email" />
@@ -488,10 +478,19 @@
             </div>
 
             <div class="form-checkbox">
-              <input type="checkbox" name="checkbox" id="link" />
-              <label for="link">
+              <label class="label-checkbox">
+                <input
+                  class="input-checkbox rest"
+                  type="checkbox"
+                  name="user-agreement"
+                  value="agree"
+                  id="checkbox"
+                />
+                <span class="custom-check">
+                  <svg class="check-icon" width="16" height="15"></svg>
+                </span>
                 Погоджуюся з розсилкою та приймаю
-                <a class="form-link" href="">Умови договору</a>
+                <a href="" class="form-link">Умови договору</a>
               </label>
             </div>
             <div class="form-button">
@@ -580,16 +579,16 @@
           </ul>
         </div>
         <div class="footer-e-mail">
-          <form class="form footer-form">
+          <form class="footer-form">
             <div class="form-found">
               <label for="name-email">Підпишіться на розсилку</label>
               <input type="text" id="name-email" placeholder="E-mail" />
+              <button class="footer-form-button" type="submit">
+                Підписатися<svg class="button-send" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
             </div>
-            <button class="footer-form-button" type="submit">
-              Підписатися<svg class="button-send" width="24" height="24">
-                <use href="./images/icons.svg#icon-send"></use>
-              </svg>
-            </button>
           </form>
         </div>
       </div>

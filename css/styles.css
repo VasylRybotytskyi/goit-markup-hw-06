@@ -226,16 +226,25 @@ margin-right: 50px;
 }
 /*Button*/
 .hero button {
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 32px;
+    padding-left: 32px;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-family: inherit;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+   
 
     color: var(--white-text-color);
     background-color: var(--accent-text-color);
 
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.9;
-    letter-spacing: 0.06em;
-    cursor: pointer;
-    font-family: inherit;
+
+    
+    
 
 }
 /*Our advantages*/
@@ -537,6 +546,7 @@ border-radius: 0px 0px 4px 4px;
 .form-found {
     display: flex;
     flex-direction: column;
+    position: relative;
       
 }
 .form-found label {
@@ -562,6 +572,12 @@ border-radius: 0px 0px 4px 4px;
 
 
 .footer-form-button {
+    position: absolute;
+    bottom: 0;
+    right: -212px;
+    width: 200px;
+    height: 50px;
+
    
     font-family: inherit;
     padding-top: 10px;
@@ -576,6 +592,57 @@ border-radius: 0px 0px 4px 4px;
     border-radius: 4px;
 }
 
+/* ---------------------------------------------------------CHECKBOX---------------------------------------------------- */
+
+.label-checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    
+  }
+  .custom-check {
+    position: relative;
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--title-text-color);
+    border-radius: 2px;
+    background-color: transparent;
+    outline: none;
+  }
+  .check-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    
+    
+  }
+  .input-checkbox:checked + .custom-check {
+    background-color: var(--accent-text-color);
+    border-color: transparent;
+    
+    
+    
+
+    
+  }
+  .input-checkbox:checked + .custom-check > svg {
+    opacity: 1;
+    background-image: url(../images/iconcheck.svg);
+    
+
+
+  }
+
+  .form-link {
+    color: var(--accent-text-color);
+  }
 /*Clients--------------------------------------------------------------------------------------------------------------------------------------*/
 .clients-list {
 display: flex;
@@ -838,7 +905,8 @@ color: var(--title-text-color);
     
     background-color: var(--white-text-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;   
+    border-radius: 50%;  
+    outline: none; 
 
     transition: border-color 250ms var(--timing-function),
     fill 250ms var(--timing-function);
@@ -879,7 +947,9 @@ color: var(--title-text-color);
     
 }
 .form-field:hover,
-.form-field:focus {
+.form-field:focus-within {
+    
+    
     fill: var(--accent-text-color);
     
 }
@@ -890,6 +960,7 @@ color: var(--title-text-color);
     top: 32px; 
     
 }
+
 
 .form-field input {
     margin: 0;
