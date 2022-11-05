@@ -611,8 +611,7 @@ border-radius: 0px 0px 4px 4px;
     height: 15px;
     border: 2px solid var(--title-text-color);
     border-radius: 2px;
-    background-color: transparent;
-    outline: none;
+    
   }
   .check-icon {
     position: absolute;
