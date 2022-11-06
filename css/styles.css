@@ -225,7 +225,7 @@ margin-right: 50px;
 
 }
 /*Button*/
-.hero button {
+.hero-button {
     
     padding-top: 10px;
     padding-bottom: 10px;
@@ -539,17 +539,7 @@ border-radius: 0px 0px 4px 4px;
 
 /*----------------FORM-FOOTER-----------------------------------------------------------*/
 
-.footer-e-mail {
-    margin-left: 93px;
-    
-}
-.form-found {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-      
-}
-.form-found label {
+.footer-label {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -560,7 +550,18 @@ border-radius: 0px 0px 4px 4px;
     margin-bottom: 20px;
     color: var(--white-text-color);
 }
-.form-found input {
+
+.footer-e-mail {
+    margin-left: auto;    
+}
+
+.footer-form {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.footer-form input {
     width: 358px;
     padding: 15px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -572,14 +573,11 @@ border-radius: 0px 0px 4px 4px;
 
 
 .footer-form-button {
-    position: absolute;
-    bottom: 0;
-    right: -212px;
-    width: 200px;
-    height: 50px;
 
    
     font-family: inherit;
+    font-weight: 700;
+    letter-spacing: 0.06em;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 28px;
@@ -896,6 +894,9 @@ color: var(--title-text-color);
 }
  .modal-button {
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     top: 8px;
     left: 490px;
     width: 30px;
@@ -1037,14 +1038,13 @@ textarea:focus {
     color: var(--accent-text-color);
 }
 .form-button-text {
-    
     background-color: var(--accent-text-color);
     color: var(--white-text-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-
-    font-family: 'Roboto';
-    font-style: normal;
+    border: none;
+    
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
@@ -1052,6 +1052,7 @@ textarea:focus {
     padding-bottom: 10px;
     padding-left: 52px;
     padding-right: 52px;
+
     
     
     letter-spacing: 0.06em;
