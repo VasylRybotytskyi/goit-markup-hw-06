@@ -196,7 +196,7 @@ margin-right: 50px;
 /*Hero*/
 .hero {
     max-width: 1600px;
-    height: 600px;
+   
     background-color: #2F303A;
      background-image: linear-gradient( to right , rgba(47, 48, 58, 0.4) , rgba(47, 48, 58, 0.4) ),
         url(../images/hero-img.jpg);
@@ -901,7 +901,7 @@ color: var(--title-text-color);
     justify-content: center;
     align-items: center;
     top: 8px;
-    left: 490px;
+    right: 8px;
     width: 30px;
     height: 30px;
     
@@ -936,10 +936,7 @@ color: var(--title-text-color);
     
 }
 
-.form {
-    width: 448px;
-   
-}
+
 .form-field {
     display: flex;
     flex-direction: column;
@@ -998,7 +995,7 @@ color: var(--title-text-color);
 } 
 textarea {
     resize: none;
-    width: 100%;
+    
     height: 120px;
      border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
